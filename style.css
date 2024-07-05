@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(222, 128, 128);
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.board{
+    margin-top: 10%;
+    color: aliceblue;
+    background-color: #fff;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    box-shadow: 0px 0px  10px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+   
+   
+}
+
+
+.cell{
+    
+    border: 2px solid rgb(155, 60, 60);
+    color: black;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 76px;
+    font-weight: bolder;
+    cursor: pointer; 
+}
+.cell:hover{
+    color: blue;
+}
+
+.board :first-child, :nth-child(2) ,:nth-child(3){
+    border-top: none;
+}
+
+.board :first-child, :nth-child(4) ,:nth-child(7){
+    border-left: none;
+}
+
+.board :last-child, :nth-child(8) ,:nth-child(7){
+    border-bottom: none;
+}
+
+.board :last-child, :nth-child(3) ,:nth-child(6){
+    border-right: none;
+}
+
+
+
+
+
+.startPlay{
+    position: absolute;
+    margin-top: 15%;
+    padding: 5%;
+    height: 200px;
+    width: 300px;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    font-size: 1.5em;
+
+   
+} 
+
+.startPlay label{
+    padding: 5px;
+
+}
+.startPlay input{
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.startPlay button{
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+
+.startPlay button:hover{
+    background-color: #e18080;
+}
+
+
+.message{
+    position: absolute;
+    left: 0 ;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.message p{
+
+text-align: center;
+ font-size: large;
+ width: auto;
+ font-weight: bolder;
+ padding: 10px;
+ color: white;
+ background-color: rgba(0, 0, 0, 0.2);
+    
+}
+.message button{
+
+    text-align: center;
+     font-size: large;
+     width: auto;
+     font-weight: bolder;
+     padding: 10px;
+     color: rgb(255, 189, 189);
+     background-color: rgba(0, 0, 0, 0.2);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+     cursor: pointer;
+    border-style:none ;
+        
+    }
+
+    .message button:hover{
+        background-color: rgb(94, 81, 81);
+        color: rgb(12, 4, 4);
+
+
+    }
