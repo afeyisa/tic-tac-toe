@@ -108,7 +108,6 @@ const Game = (function() {
 
 
          const start =()=>{
-            DOM.takeNames();
             DOM.replayer();
             DOM.addEventListeners();
             DOM.hoverListener();
