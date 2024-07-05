@@ -135,7 +135,7 @@ const DOM =(function(){
 
             function setHeader (){
                 let p = Game.getPlayer();
-                console.log(p)
+               
                 head.textContent = `${p[0].name} Vs  ${p[1].name} `
             };
         // event lisnet to start button
